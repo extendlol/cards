@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+div {
+    display:block;
+}
+
+body {
+    background: radial-gradient(circle, rgb(180, 139, 255) 20%, rgb(0, 255, 128) 100%);
+}
+
+h1 {
+    font-family: roboto;
+}
+
+img {
+    border-style: double;
+    float:right;
+    width: 20%;
+    padding: 5px;
+    margin: 20px;
+    margin-left: 75px;
+    transform: rotate(5deg);
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+img:hover {
+    width: 50%;
+}
+
+p {
+    font-size: 20pt;
+    font-style: italic;
+    color: grey;
+    background-color: rgb(32, 32, 32);
+    padding: 20px;
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
